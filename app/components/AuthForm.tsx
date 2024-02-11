@@ -14,7 +14,7 @@ const AuthForm = (props: Props) => {
       view="magic_link"
       showLinks={false}
       providers={[]}
-      redirectTo="/auth/callback"
+      redirectTo="https://watch-list-mocha.vercel.app/auth/callback"
       appearance={{
         className: {
           button: "bg-white-400 text-gray-900",
