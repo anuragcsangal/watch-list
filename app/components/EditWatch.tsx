@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { updateWatch } from "../server-actions/updateWatch"
 
-export default function EditWatch({ watch }) {
+export default function EditWatch({ watch }: any) {
 
   const [showModal, setShowModal] = useState(false)
   const [formData, setFormData] = useState({
@@ -12,7 +12,10 @@ export default function EditWatch({ watch }) {
     referenceNumber: watch.reference_number
   })
 
-  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value })
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const target = e.target as HTMLInputElement
+    setFormData({ ...formData, [target?.name]: target?.value })
+  }
 
 
   return (
