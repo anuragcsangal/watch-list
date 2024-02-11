@@ -14,7 +14,7 @@ const AuthForm = (props: Props) => {
       view="magic_link"
       showLinks={false}
       providers={[]}
-      redirectTo="http://localhost:3000/auth/callback"
+      redirectTo="/auth/callback"
       appearance={{
         className: {
           button: "bg-white-400 text-gray-900",

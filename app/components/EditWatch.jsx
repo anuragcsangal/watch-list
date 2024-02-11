@@ -12,7 +12,7 @@ export default function EditWatch({ watch }) {
     referenceNumber: watch.reference_number
   })
 
-  const handleChange = (e: Event) => setFormData({ ...formData, [e.target.name]: e.target.value })
+  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value })
 
 
   return (
