@@ -17,9 +17,12 @@ const AuthForm = (props: Props) => {
       providers={[]}
       redirectTo={`${callbackUrl}/auth/callback`}
       appearance={{
+        extend: false,
         className: {
-          button: "bg-white-400 text-gray-900",
-          input: "bg-gray-700 border-gray-600 text-white",
+          container: "flex flex-col gap-5",
+          button: "bg-black text-zinc-300 rounded-lg",
+          input: "bg-black p-2 border-gray-600 text-white rounded-lg w-full",
+          label: "block my-1 text-white",
         }
       }}
     />
