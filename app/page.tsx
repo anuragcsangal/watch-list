@@ -1,5 +1,4 @@
 import AuthForm from "./components/AuthForm";
-import Watch from "./components/Watch";
 
 export default function Home() {
   return (
