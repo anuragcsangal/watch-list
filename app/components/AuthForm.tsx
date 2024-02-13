@@ -8,13 +8,14 @@ type Props = {}
 const AuthForm = (props: Props) => {
   const supabase = createClientComponentClient();
 
+  const callbackUrl = "https://watch-list-rust.vercel.app"
   return (
     <Auth
       supabaseClient={supabase}
       view="magic_link"
       showLinks={false}
       providers={[]}
-      redirectTo="https://watch-list-mocha.vercel.app/auth/callback"
+      redirectTo={`${callbackUrl}/auth/callback`}
       appearance={{
         className: {
           button: "bg-white-400 text-gray-900",
