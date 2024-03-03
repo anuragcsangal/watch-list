@@ -8,7 +8,7 @@ type Props = {}
 const AuthForm = (props: Props) => {
   const supabase = createClientComponentClient();
 
-  const callbackUrl = "https://watch-list-rust.vercel.app"
+  const callbackUrl = "https://watch-list-rust.vercel"
   return (
     <Auth
       supabaseClient={supabase}
