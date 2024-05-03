@@ -7,5 +7,3 @@ In this app you can -
   - View only your watches
   - Update your watches
   - Delete your watches
-
-Also I've added few animations using GSAP animation library and beautification using tailwind css
